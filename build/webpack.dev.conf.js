@@ -1,8 +1,10 @@
 /**
+ * @format
  * @Author: huweijian
  * @Date: 2020-02-08 08:55:15
  * @Desc: 开发时配置
  */
+
 const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
