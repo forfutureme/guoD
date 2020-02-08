@@ -1,8 +1,10 @@
 /**
+ * @format
  * @Author: huweijian
  * @Date: 2020-02-08 08:50:29
  * @Desc: webpack基础配置
  */
+
 const path = require('path')
 const chalk = require('chalk')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
@@ -31,6 +33,11 @@ module.exports = {
       {
         test: /\.tsx?$/,
         loader: 'ts-loader'
+      },
+      // scss样式文件
+      {
+        test: /\.s(c|a)ss$/,
+        use: ['style-loader', 'css-loader', 'sass-loader']
       }
     ]
   },
@@ -62,4 +69,3 @@ module.exports = {
     chunkModules: false
   }
 }
-

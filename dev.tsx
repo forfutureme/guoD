@@ -7,6 +7,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './dev.scss'
 
 import Hello from '@lib/hello/Hello'
 
