@@ -9,7 +9,8 @@
     "dev": "cross-env NODE_ENV=dev port=7750 webpack-dev-server --host 0.0.0.0 --hot --config ./build/webpack.dev.conf.js",
     "pro": "cross-env NODE_ENV=pro webpack --config webpack.pro.config.js",
     "lint": "eslint src --fix --ext .ts,.tsx ",
-    "lint-staged": "lint-staged"
+    "lint-staged": "lint-staged",
+    "precommit": "lint-staged"
   },
   "husky": {
     "hooks": {
