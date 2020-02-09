@@ -6,7 +6,8 @@
  */
 
 import React from 'react'
-
+const eg = 1
+let x = 2
 const Hello: React.FC = () => {
   return <div>Hello</div>
 }
