@@ -1,8 +1,10 @@
 /**
+ * @format
  * @Author: huweijian
  * @Date: 2020-02-08 09:01:28
  * @Desc: 生产时配置
  */
+
 const path = require('path')
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const config = require('./webpack.base.conf')
@@ -10,11 +12,11 @@ const config = require('./webpack.base.conf')
 module.exports = Object.assign({}, config, {
   mode: 'production',
   entry: {
-    index: '../src/index.tsx'
+    index: './src/index.tsx'
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
-    library: 'Bui',
+    library: 'guoD',
     libraryTarget: 'umd'
   },
   plugins: baseConfig.plugins.concat([

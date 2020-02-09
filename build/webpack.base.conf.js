@@ -21,7 +21,7 @@ if (env) {
 }
 module.exports = {
   resolve: {
-    extensions: ['.ts', '.js', '.tsx', '.jsx', '.svg'],
+    extensions: ['.ts', '.js', '.tsx', '.jsx', '.svg', '.scss'],
     alias: {
       '@src': path.resolve(__dirname, '../src'),
       '@assets': path.resolve(__dirname, '../src/assets'),

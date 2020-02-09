@@ -5,7 +5,7 @@
  * @Desc: 开发时配置
  */
 
-const webpack = require('webpack')
+// const webpack = require('webpack')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const TerserPlugin = require('terser-webpack-plugin')
 const config = require('./webpack.base.conf')

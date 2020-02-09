@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Icon单元测试 测试icon普通渲染 1`] = `
+<svg
+  className="guo-icon"
+>
+  <use
+    xlinkHref="#qq"
+  />
+</svg>
+`;
