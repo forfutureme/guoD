@@ -17,7 +17,7 @@
   },
   "lint-staged": {
     "*.{.ts,.tsx}": [
-      "eslint",
+      "npm run list",
       "git add"
     ]
   },
