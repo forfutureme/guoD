@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`测试Hello组件 测试基本渲染-他是一个div 1`] = `
+<div>
+  Hello
+</div>
+`;
