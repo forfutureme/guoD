@@ -10,10 +10,18 @@ import ReactDOM from 'react-dom'
 import './dev.scss'
 
 import Hello from '@lib/hello/Hello'
+import HelloEvent from '@lib/hello/HelloEvent'
+import HelloImage from '@lib/hello/HelloImage'
 
 ReactDOM.render(
   <div className="main">
     <Hello />
+    <HelloEvent
+      click={() => {
+        console.log(124)
+      }}
+    />
+    <HelloImage />
   </div>,
   document.getElementById('app')
 )

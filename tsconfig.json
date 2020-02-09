@@ -19,11 +19,17 @@
     "baseUrl": "./",
     "paths": {
       "@src/*": ["src/*"],
-      "@lib/*": ["src/lib/*"]
+      "@lib/*": ["src/lib/*"],
+      "@assets/*":["src/assets/*"],
+      "@utils/*": ["src/utils/*"],
+      "@image/*": ["src/assets/image/*"],
+      "@svg/*": ["src/assets/svg/*"],
+      "@scss/*": ["src/assets/scss/*"],
     }
   },
   "include": [
     "src/**/*",
+    "types/**/*",
     "dev.tsx"
   ],
   "exclude": ["node_modules", "**/*.spec.ts", "**/__test__/**/*"]

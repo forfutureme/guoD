@@ -11,7 +11,7 @@ exports[`HelloEvent组件 测试组件渲染 1`] = `
 </div>
 `;
 
-exports[`HelloEvent组件 测试组件渲染 2`] = `
+exports[`HelloEvent组件 测试组件渲染-传了click方法 1`] = `
 <div>
   <h3>
     HelloEvent

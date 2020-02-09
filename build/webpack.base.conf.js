@@ -24,7 +24,12 @@ module.exports = {
     extensions: ['.ts', '.js', '.tsx', '.jsx', '.svg'],
     alias: {
       '@src': path.resolve(__dirname, '../src'),
-      '@lib': path.resolve(__dirname, '../src/lib')
+      '@assets': path.resolve(__dirname, '../src/assets'),
+      '@lib': path.resolve(__dirname, '../src/lib'),
+      '@utils': path.resolve(__dirname, '../src/utils'),
+      '@image': path.resolve(__dirname, '../src/assets/image'),
+      '@svg': path.resolve(__dirname, '../src/assets/svg'),
+      '@scss': path.resolve(__dirname, '../src/assets/scss')
     }
   },
   module: {
@@ -38,6 +43,42 @@ module.exports = {
       {
         test: /\.s(c|a)ss$/,
         use: ['style-loader', 'css-loader', 'sass-loader']
+      },
+      // 图片 音频文件
+      {
+        test: /\.(png|jpg|jpeg|gif|mp3)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 10000,
+              name: 'images/[name].[ext]?[hash]'
+            }
+          }
+        ]
+      },
+      // svg
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'svg-sprite-loader',
+            options: {}
+          }
+        ]
+      },
+      // 字体
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              limit: 10000,
+              name: 'fonts/[name].[ext]?[hash]'
+            }
+          }
+        ]
       }
     ]
   },
