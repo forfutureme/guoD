@@ -8,6 +8,7 @@
 import React from 'react'
 const eg = 1
 let x = 2
+let y = 3
 const Hello: React.FC = () => {
   return <div>Hello</div>
 }
