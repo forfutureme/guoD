@@ -4,9 +4,13 @@
  * @Date: 2020-02-09 15:45:09
  * @Desc: icon样式
  */
+@import '@scss/tool/_animation';
 .guo-icon {
   width: 1em;
   height: 1em;
   font-size: inherit;
   fill: currentColor;
+  &-loading {
+    animation: loadingCircle 1s infinite linear;
+  }
 }

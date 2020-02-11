@@ -19,7 +19,14 @@ ReactDOM.render(
     <Hello />
     {/* <HelloEvent /> */}
     {/* <HelloImage /> */}
-    <Icon name="qq" />
+    <div className="icon-use">
+      <h3>icon</h3>
+      <div className="icon-area">
+        <Icon name="qq" />
+        <Icon name="loading" />
+        <Icon name="close" style={{color: '#f00'}} />
+      </div>
+    </div>
   </div>,
   document.getElementById('app')
 )

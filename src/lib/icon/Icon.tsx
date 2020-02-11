@@ -18,7 +18,9 @@ interface IconProps extends React.SVGAttributes<SVGElement> {
 
 const Icon: React.FC<IconProps> = ({name, className, ...restProps}) => {
   return (
-    <svg className={joinClassName(fixClass(), className)} {...restProps}>
+    <svg
+      className={joinClassName(fixClass(), fixClass(name), className)}
+      {...restProps}>
       <use xlinkHref={`#${name}`}></use>
     </svg>
   )

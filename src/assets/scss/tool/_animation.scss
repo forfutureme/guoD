@@ -1,0 +1,12 @@
+/**
+ * @format
+ * @Author: huweijian
+ * @Date: 2020-02-11 08:33:02
+ * @Desc: 动画样式
+ */
+// loading动画。旋转360度
+@keyframes loadingCircle {
+  100% {
+    transform: rotate(360deg);
+  }
+}

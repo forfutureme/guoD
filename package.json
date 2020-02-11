@@ -72,6 +72,7 @@
     "jest-junit": "^10.0.0",
     "lint-staged": "^10.0.7",
     "node-sass": "^4.13.1",
+    "postcss-loader": "^3.0.0",
     "prettier": "^1.19.1",
     "progress-bar-webpack-plugin": "^2.1.0",
     "react-test-renderer": "^16.12.0",
@@ -91,5 +92,11 @@
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.3"
-  }
+  },
+  "browserslist":[
+    "last 10 Chrome versions",
+    "last 5 Firefox versions",
+    "Safari >= 6",
+    "ie > 11"
+  ]
 }
