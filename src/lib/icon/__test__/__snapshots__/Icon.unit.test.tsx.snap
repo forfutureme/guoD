@@ -2,7 +2,7 @@
 
 exports[`Icon单元测试 测试icon普通渲染 1`] = `
 <svg
-  className="guo-icon"
+  className="guo-icon guo-icon-qq"
 >
   <use
     xlinkHref="#qq"

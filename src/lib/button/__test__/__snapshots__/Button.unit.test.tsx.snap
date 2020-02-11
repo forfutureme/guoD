@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button测试 测试Button渲染 1`] = `
+<button
+  className="guo-button guo-button-default"
+/>
+`;

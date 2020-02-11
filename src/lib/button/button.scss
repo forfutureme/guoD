@@ -1,0 +1,41 @@
+/**
+ * @format
+ * @Author: huweijian
+ * @Date: 2020-02-11 21:12:26
+ * @Desc: 按钮样式
+ */
+@import '@scss/variable/_variable';
+.guo-button {
+  display: inline-block;
+  width: 4em;
+  color: #333;
+  font-size: 14px;
+  line-height: 30px;
+  border-radius: $brs4;
+  &:focus {
+    outline: none;
+  }
+  &-default {
+    background-color: #fff;
+    border: 1px solid #eee;
+    transition: border-color 0.2s linear, color 0.2s linear;
+    &:hover {
+      color: $main-color;
+      border-color: $main-color;
+    }
+  }
+
+  &-primary {
+    color: #fff;
+    background-color: $main-color;
+    transition: background-color 0.2s linear;
+    &:hover {
+      background-color: lighten($main-color, 5%);
+    }
+  }
+
+  &-error {
+    color: #fff;
+    background-color: darken(#f00, 20%);
+  }
+}
