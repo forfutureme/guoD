@@ -10,18 +10,23 @@ import ReactDOM from 'react-dom'
 import './dev.scss'
 
 import Hello from '@lib/hello/Hello'
-import HelloEvent from '@lib/hello/HelloEvent'
-import HelloImage from '@lib/hello/HelloImage'
+// import HelloEvent from '@lib/hello/HelloEvent'
+// import HelloImage from '@lib/hello/HelloImage'
+import Icon from '@lib/icon/Icon'
 
 ReactDOM.render(
   <div className="main">
     <Hello />
-    <HelloEvent
-      click={() => {
-        console.log(124)
-      }}
-    />
-    <HelloImage />
+    {/* <HelloEvent /> */}
+    {/* <HelloImage /> */}
+    <div className="icon-use">
+      <h3>icon</h3>
+      <div className="icon-area">
+        <Icon name="qq" />
+        <Icon name="loading" />
+        <Icon name="close" style={{color: '#f00'}} />
+      </div>
+    </div>
   </div>,
   document.getElementById('app')
 )

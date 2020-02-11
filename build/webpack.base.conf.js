@@ -10,6 +10,13 @@ const chalk = require('chalk')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const env = process.env.NODE_ENV
 const port = process.env.port
+const postCssConfig = {
+  loader: 'postcss-loader',
+  options: {
+    ident: 'postcss',
+    plugins: [require('autoprefixer')]
+  }
+}
 if (env) {
   console.log(
     chalk.cyan(
@@ -21,7 +28,7 @@ if (env) {
 }
 module.exports = {
   resolve: {
-    extensions: ['.ts', '.js', '.tsx', '.jsx', '.svg'],
+    extensions: ['.ts', '.js', '.tsx', '.jsx', '.svg', '.scss'],
     alias: {
       '@src': path.resolve(__dirname, '../src'),
       '@assets': path.resolve(__dirname, '../src/assets'),
@@ -42,7 +49,7 @@ module.exports = {
       // scss样式文件
       {
         test: /\.s(c|a)ss$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', postCssConfig, 'sass-loader']
       },
       // 图片 音频文件
       {
