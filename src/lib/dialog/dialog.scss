@@ -1,0 +1,64 @@
+/**
+ * @format
+ * @Author: huweijian
+ * @Date: 2020-02-12 08:23:05
+ * @Desc: dialog 样式
+ */
+@mixin auto {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.guo-dialog {
+  position: fixed;
+  z-index: 100;
+  @include auto;
+  &-mask {
+    position: absolute;
+    z-index: 101;
+    @include auto;
+    background: fade-out($color: #000000, $amount: 0.5);
+  }
+  &-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 102;
+    width: 20em;
+    font-size: 18px;
+    background: #fff;
+    transform: translate(-50%, -50%);
+  }
+  &-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    color: darken(#000, 20%);
+    font-size: 16px;
+  }
+  &-title {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 40px;
+    text-indent: 10px;
+  }
+  &-main {
+    min-height: 15em;
+    padding: 10px;
+    font-size: 14px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  &-footer {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
