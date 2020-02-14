@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Input测试 测试基本的input渲染 1`] = `
+<div
+  className="guo-input-box"
+>
+  <input
+    className="guo-input"
+    type="text"
+  />
+</div>
+`;
+
+exports[`Input测试 测试限制输入长度同时显示已输入字数的input 1`] = `
+<div
+  className="guo-input-box"
+>
+  <input
+    className="guo-input"
+    maxLength={10}
+    type="text"
+    value="1"
+  />
+  <span
+    className="guo-input-num"
+  >
+    1
+    /
+    10
+  </span>
+</div>
+`;
+
+exports[`Input测试 测试限制输入长度的input 1`] = `
+<div
+  className="guo-input-box"
+>
+  <input
+    className="guo-input"
+    maxLength={10}
+    type="text"
+  />
+</div>
+`;

@@ -1,0 +1,25 @@
+/**
+ * @format
+ * @Author: huweijian
+ * @Date: 2020-02-14 07:55:48
+ * @Desc: input组件样式
+ */
+@import '@scss/variable/_variable';
+.guo-input {
+  width: 100%;
+  font-size: 14px;
+  line-height: 30px;
+  &:focus {
+    border: 1px solid $main-color;
+    outline: none;
+  }
+  &-box {
+    position: relative;
+  }
+  &-num {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+}

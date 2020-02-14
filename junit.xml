@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="1" failures="0" time="1.819">
-  <testsuite name="Dialog测试" errors="0" failures="0" skipped="0" timestamp="2020-02-13T00:11:40" time="1.106" tests="1">
-    <testcase classname="Dialog测试 dialog-关闭事件" name="Dialog测试 dialog-关闭事件" time="0.034">
+<testsuites name="jest tests" tests="3" failures="0" time="1.734">
+  <testsuite name="Input测试" errors="0" failures="0" skipped="0" timestamp="2020-02-14T00:19:14" time="0.975" tests="3">
+    <testcase classname="Input测试 测试基本的input渲染" name="Input测试 测试基本的input渲染" time="0.01">
+    </testcase>
+    <testcase classname="Input测试 测试限制输入长度的input" name="Input测试 测试限制输入长度的input" time="0.001">
+    </testcase>
+    <testcase classname="Input测试 测试限制输入长度同时显示已输入字数的input" name="Input测试 测试限制输入长度同时显示已输入字数的input" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>
