@@ -11,7 +11,7 @@ import Input from '@lib/input/Input'
 const UseInput: React.FC = () => {
   const [value, setValue] = useState('text')
   return (
-    <div className="ues-input">
+    <div className="ues-input" style={{width: '300px'}}>
       <h3>Input</h3>
       <div className="input-area">
         <h4>普通的input</h4>

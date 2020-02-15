@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`formPrivate测试 测试formPrivate渲染 1`] = `
+<form
+  className="guo-form-private"
+  onSubmit={[Function]}
+>
+  <div
+    className="box"
+  >
+    <label
+      className="label"
+    >
+      姓名
+    </label>
+    <div
+      className="guo-input-box"
+    >
+      <input
+        className="guo-input"
+        onChange={[Function]}
+        type="text"
+        value=""
+      />
+    </div>
+  </div>
+  <div />
+</form>
+`;

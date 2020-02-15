@@ -1,0 +1,19 @@
+/**
+ * @format
+ * @Author: huweijian
+ * @Date: 2020-02-15 10:33:10
+ * @Desc: formPrivate 样式
+ */
+.guo-form {
+  &-private {
+    width: 500px;
+    > .box {
+      display: flex;
+      align-items: center;
+      padding-bottom: 10px;
+      > .label {
+        padding-right: 10px;
+      }
+    }
+  }
+}
