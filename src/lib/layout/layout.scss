@@ -1,0 +1,23 @@
+/**
+ * @format
+ * @Author: huweijian
+ * @Date: 2020-02-16 09:48:05
+ * @Desc:Layout 样式
+ */
+.guo-layout {
+  display: flex;
+  flex-direction: column;
+  & > &-content {
+    flex-grow: 1;
+  }
+  & > & {
+    flex-direction: row;
+    flex-grow: 1;
+  }
+  &-has-aside {
+    flex-direction: row;
+    & > .guo-layout {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Layout测试 测试Aside渲染 1`] = `
+<div
+  className="guo-layout-aside"
+>
+  Aside
+</div>
+`;
+
+exports[`Layout测试 测试Content渲染 1`] = `
+<div
+  className="guo-layout-content"
+>
+  Content
+</div>
+`;
+
+exports[`Layout测试 测试Footer渲染 1`] = `
+<div
+  className="guo-layout-footer"
+>
+  Footer
+</div>
+`;
+
+exports[`Layout测试 测试Header渲染 1`] = `
+<div
+  className="guo-layout-header"
+>
+  Header
+</div>
+`;
+
+exports[`Layout测试 测试Layout渲染 1`] = `
+<div
+  className="guo-layout guo-layout-has-aside"
+>
+  <div
+    className="guo-layout-aside"
+  />
+  <div
+    className="guo-layout"
+  >
+    <div
+      className="guo-layout-header"
+    >
+      Header
+    </div>
+  </div>
+</div>
+`;

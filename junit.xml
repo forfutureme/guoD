@@ -1,37 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="14" failures="0" time="2.081">
-  <testsuite name="测试tools所有方法" errors="0" failures="0" skipped="0" timestamp="2020-02-15T02:47:58" time="1.089" tests="8">
-    <testcase classname="测试tools所有方法 测试isEmpty方法 传入空字符串" name="测试tools所有方法 测试isEmpty方法 传入空字符串" time="0.002">
+<testsuites name="jest tests" tests="5" failures="0" time="1.746">
+  <testsuite name="Layout测试" errors="0" failures="0" skipped="0" timestamp="2020-02-16T02:19:08" time="1.014" tests="5">
+    <testcase classname="Layout测试 测试Layout渲染" name="Layout测试 测试Layout渲染" time="0.01">
     </testcase>
-    <testcase classname="测试tools所有方法 测试isEmpty方法 传入null" name="测试tools所有方法 测试isEmpty方法 传入null" time="0">
+    <testcase classname="Layout测试 测试Aside渲染" name="Layout测试 测试Aside渲染" time="0">
     </testcase>
-    <testcase classname="测试tools所有方法 测试isEmpty方法 传入undefined" name="测试tools所有方法 测试isEmpty方法 传入undefined" time="0.001">
+    <testcase classname="Layout测试 测试Content渲染" name="Layout测试 测试Content渲染" time="0.001">
     </testcase>
-    <testcase classname="测试tools所有方法 测试isEmpty方法 插入有效字符串" name="测试tools所有方法 测试isEmpty方法 插入有效字符串" time="0">
+    <testcase classname="Layout测试 测试Header渲染" name="Layout测试 测试Header渲染" time="0.001">
     </testcase>
-    <testcase classname="测试tools所有方法 测试isNotEmpty方法 传入空字符串" name="测试tools所有方法 测试isNotEmpty方法 传入空字符串" time="0">
-    </testcase>
-    <testcase classname="测试tools所有方法 测试isNotEmpty方法 传入null" name="测试tools所有方法 测试isNotEmpty方法 传入null" time="0.001">
-    </testcase>
-    <testcase classname="测试tools所有方法 测试isNotEmpty方法 传入undefined" name="测试tools所有方法 测试isNotEmpty方法 传入undefined" time="0">
-    </testcase>
-    <testcase classname="测试tools所有方法 测试isNotEmpty方法 插入有效字符串" name="测试tools所有方法 测试isNotEmpty方法 插入有效字符串" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="测试表单验证方法" errors="0" failures="0" skipped="0" timestamp="2020-02-15T02:47:58" time="1.105" tests="5">
-    <testcase classname="测试表单验证方法 测试name必填，传空" name="测试表单验证方法 测试name必填，传空" time="0.002">
-    </testcase>
-    <testcase classname="测试表单验证方法 测试name必填，传有效值" name="测试表单验证方法 测试name必填，传有效值" time="0">
-    </testcase>
-    <testcase classname="测试表单验证方法 测试name不必填，传空" name="测试表单验证方法 测试name不必填，传空" time="0.001">
-    </testcase>
-    <testcase classname="测试表单验证方法 测试name不必填，传有效值" name="测试表单验证方法 测试name不必填，传有效值" time="0">
-    </testcase>
-    <testcase classname="测试表单验证方法 测试多个输入不能为空" name="测试表单验证方法 测试多个输入不能为空" time="0">
-    </testcase>
-  </testsuite>
-  <testsuite name="formPrivate测试" errors="0" failures="0" skipped="0" timestamp="2020-02-15T02:47:58" time="1.228" tests="1">
-    <testcase classname="formPrivate测试 测试formPrivate渲染" name="formPrivate测试 测试formPrivate渲染" time="0.012">
+    <testcase classname="Layout测试 测试Footer渲染" name="Layout测试 测试Footer渲染" time="0.001">
     </testcase>
   </testsuite>
 </testsuites>
