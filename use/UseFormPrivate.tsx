@@ -9,7 +9,7 @@ import React, {useState} from 'react'
 // eslint-disable-next-line no-unused-vars
 import FormPrivate, {formDataProps} from '@lib/form/FormPrivate'
 import Button from '@lib/button/Button'
-import formPrivateValidataor from '@lib/form/formPrivateValidataor'
+import FormPrivateValidataor from '@lib/form/FormPrivateValidataor'
 
 const UseFormPrivate: React.FC = () => {
   const [formData, setFormData] = useState<formDataProps>({
@@ -29,7 +29,7 @@ const UseFormPrivate: React.FC = () => {
     })
   }
   const submit = async (item: formDataProps) => {
-    const result = await formPrivateValidataor(item, [
+    const result = await FormPrivateValidataor(item, [
       {
         key: 'name',
         ruelList: [
