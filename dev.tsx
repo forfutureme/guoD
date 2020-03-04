@@ -18,6 +18,7 @@ import UseDialog from './use/UseDialog'
 import UseInput from './use/UseInput'
 import UseFormPrivate from './use/UseFormPrivate'
 import UseLayout from './use/UseLayout'
+import UseMessage from './use/UseMessage'
 
 ReactDOM.render(
   <div className="main">
@@ -30,6 +31,7 @@ ReactDOM.render(
     <UseInput />
     <UseFormPrivate />
     <UseLayout />
+    <UseMessage />
   </div>,
   document.getElementById('app')
 )
