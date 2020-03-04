@@ -5,7 +5,7 @@
  * @Desc: 使用Message
  */
 import React, {useState} from 'react'
-import Message from '@lib/message/Message'
+import Message, {Msg} from '@lib/message/Message'
 import Button from '@lib/button/Button'
 
 const UseMessage: React.FC = () => {
@@ -18,9 +18,27 @@ const UseMessage: React.FC = () => {
         onClick={() => {
           setVMsg(!vMsg)
         }}>
+        Message弹框
+      </Button>
+      <Button
+        theme="primary"
+        onClick={() => {
+          Msg({
+            text: 'hh , this is a Msg ~ 哈哈哈',
+            type: 'warning',
+            icon: false,
+            dismissible: true,
+            time: 3000
+          })
+        }}>
         Msg弹框
       </Button>
-      <Message visible={vMsg} type="warning" showIcon={true} deleteIcon={false}>
+      <Message
+        visible={vMsg}
+        type="warning"
+        icon={true}
+        dismissible={false}
+        time={3000}>
         hh , this is a message ~ 哈哈哈
       </Message>
     </div>
