@@ -5,7 +5,7 @@
  * @Desc: 使用Message
  */
 import React, {useState} from 'react'
-import Message, {Msg} from '@lib/message/Message'
+import Message, {message} from '@lib/message/Message'
 import Button from '@lib/button/Button'
 
 const UseMessage: React.FC = () => {
@@ -23,7 +23,7 @@ const UseMessage: React.FC = () => {
       <Button
         theme="primary"
         onClick={() => {
-          Msg({
+          message({
             text: 'hh , this is a Msg ~ 哈哈哈',
             type: 'warning',
             icon: false,

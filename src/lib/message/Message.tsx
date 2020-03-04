@@ -41,8 +41,8 @@ const Message: React.FC<props> = ({
   children = '',
   closeFunc
 }) => {
-  icon = children && icon ? true : false
-  dismissible = children && dismissible ? true : false
+  icon = children && icon
+  dismissible = children && dismissible
   const [visibleLocal, setVisibleLocal] = useState(true)
   useEffect(() => {
     setTimeout(() => {
@@ -88,7 +88,7 @@ type msgProps = {
   time?: number
 }
 
-export const Msg = (props: msgProps): (() => void) => {
+const message = (props: msgProps): (() => void) => {
   const {text, dismissible, type, icon, time} = props
   const div = document.createElement('div')
   const closeFunc = () => {
@@ -111,5 +111,7 @@ export const Msg = (props: msgProps): (() => void) => {
   ReactDOM.render(component, div)
   return closeFunc
 }
+message.abc = () => {}
+export {message}
 
 export default Message
