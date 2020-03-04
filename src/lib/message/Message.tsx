@@ -5,7 +5,7 @@
  * @Desc: Message
  */
 
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import './Message.scss'
 import {prefixClass, joinClassName} from '@utils/classNameHandle'
 const fixClass = prefixClass('guo-message')
@@ -25,7 +25,15 @@ const Message: React.FC<props> = ({
   deleteIcon = false,
   children
 }) => {
-  return visible ? (
+  const [visibleLocal, setVisibleLocal] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      if (!deleteIcon) {
+        setVisibleLocal(false)
+      }
+    }, 3000)
+  }, [])
+  return visible && visibleLocal ? (
     <div className={joinClassName(fixClass(), fixClass(type))}>
       {showIcon ? (
         <svg className={joinClassName(fixClass('icon'))}>

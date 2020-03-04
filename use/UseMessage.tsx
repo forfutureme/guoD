@@ -20,7 +20,7 @@ const UseMessage: React.FC = () => {
         }}>
         Msg弹框
       </Button>
-      <Message visible={vMsg} type="warning" showIcon={true} deleteIcon={true}>
+      <Message visible={vMsg} type="warning" showIcon={true} deleteIcon={false}>
         hh , this is a message ~ 哈哈哈
       </Message>
     </div>
