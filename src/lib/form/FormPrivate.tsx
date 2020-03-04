@@ -7,7 +7,7 @@
 import React from 'react'
 
 import Input from '@lib/input/Input'
-import './FormPrivate.scss'
+import './formPrivate.scss'
 import {joinClassName, prefixClass} from '@utils/classNameHandle'
 const fixClass = prefixClass('guo-form')
 export type formDataProps = {
