@@ -3,8 +3,8 @@
  * @Author: Firmiana
  * @Date: 2020-03-04 10:37:28
  * @Desc: Message
- * @TODO: 1.高度可变 2.边框(类型/颜色/圆角/属性) 3.主题？ 4.背景透明度
- * @TODO: 5.Icon(自定义/大图标) 6.文本属性 7.关闭(icon属性/文本) 8.过渡效果
+ * @TODO: 1.高度/宽度可变 2.边框(类型/颜色/圆角/属性) 3.主题？ 4.背景(颜色/透明度)
+ * @TODO: 5.Icon(自定义/大图标) 6.文本属性 7.关闭(icon属性/文本) 8.过渡效果 9.有无关闭图标都永久显示
  */
 import ReactDOM from 'react-dom'
 import React, {useEffect, useState} from 'react'
@@ -111,7 +111,20 @@ const message = (props: msgProps): (() => void) => {
   ReactDOM.render(component, div)
   return closeFunc
 }
-message.abc = () => {}
+
+message.success = (props: msgProps) => {
+  message({...props, type: 'success'})
+}
+message.warning = (props: msgProps) => {
+  message({...props, type: 'warning'})
+}
+message.error = (props: msgProps) => {
+  message({...props, type: 'error'})
+}
+message.info = (props: msgProps) => {
+  message({...props, type: 'info'})
+}
+
 export {message}
 
 export default Message

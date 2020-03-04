@@ -26,12 +26,21 @@ const UseMessage: React.FC = () => {
           message({
             text: 'hh , this is a Msg ~ 哈哈哈',
             type: 'warning',
-            icon: false,
-            dismissible: true,
+            icon: true,
+            dismissible: false,
             time: 3000
           })
         }}>
         Msg弹框
+      </Button>
+      <Button
+        theme="primary"
+        onClick={() => {
+          message.success({
+            text: 'hh , this is a success Msg ~ 哈哈哈'
+          })
+        }}>
+        Msg 成功弹框
       </Button>
       <Message
         visible={vMsg}
