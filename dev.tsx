@@ -19,6 +19,7 @@ import UseInput from './use/UseInput'
 import UseFormPrivate from './use/UseFormPrivate'
 import UseLayout from './use/UseLayout'
 import UseMessage from './use/UseMessage'
+import TestReactNode from './src/testNode'
 
 ReactDOM.render(
   <div className="main">
@@ -32,6 +33,7 @@ ReactDOM.render(
     <UseFormPrivate />
     <UseLayout />
     <UseMessage />
+    <TestReactNode />
   </div>,
   document.getElementById('app')
 )
